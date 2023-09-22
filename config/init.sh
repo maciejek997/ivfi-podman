@@ -14,9 +14,9 @@ msg "Making config directories..."
 mkdir -p /config/{nginx,ivfi}
 
 msg "Adding dummy user for better permission handling..."
-useradd -u 900 -U -d /config -s /bin/false dummy && usermod -G users dummy
-groupmod -o -g "$PGID" dummy
-usermod -o -u "$PUID" dummy
+useradd -u 1500 -U -d /config -s /bin/false dummy && usermod -G users dummy
+groupmod -o -g "$DGID" dummy
+usermod -o -u "$DUID" dummy
 
 # Locations of configuration files
 orig_nginx="/etc/nginx/conf.d/ivfi.conf"
