@@ -743,6 +743,26 @@ class Indexer extends Helpers
 {
   public $path;
 
+/* This gets rid of deprecated warnings */
+
+  public $processor;
+
+  public $client;
+
+  public $timestamp;
+
+  public $debug;
+
+  public $directorySizes;
+
+  public $filter;
+
+  public $exclude;
+
+  public $format;
+
+/* I don't know about any better way of fixing it */
+
   private $relative;
 
   private $pathPrepend;
