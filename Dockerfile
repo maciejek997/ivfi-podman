@@ -20,7 +20,7 @@ COPY config/php_set_memory_limit.ini /etc/php82/conf.d/00_memlimit.ini
 COPY config/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 # Copy IVFi
-COPY config/ivfi /usr/share/ivfi/ivfi
+COPY config/ivfi /usr/share/ivfi
 
 # Configure Nginx server
 RUN sed --in-place=.bak 's/worker_processes  1/worker_processes  auto/g' /etc/nginx/nginx.conf

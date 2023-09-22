@@ -20,7 +20,7 @@ usermod -o -u "$DUID" dummy
 
 # Locations of configuration files
 orig_nginx="/etc/nginx/conf.d/ivfi.conf"
-orig_ivfi="/usr/share/ivfi/ivfi"
+orig_ivfi="/usr/share/ivfi"
 conf_nginx="/config/nginx/ivfi.conf"
 conf_ivfi="/config/ivfi/ivfi"
 
