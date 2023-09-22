@@ -57,3 +57,5 @@ chown -R dummy:dummy /config
 
 msg "Start supervisord..."
 supervisord -c /etc/supervisor/conf.d/supervisord.conf
+
+cat /etc/php-fpm.d/www.conf
