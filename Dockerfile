@@ -9,8 +9,8 @@ RUN apk add --no-cache \
     php82 php82-fpm php82-opcache
 
 # Environment variables
-ENV DUID=900
-ENV DGID=900
+ENV DUID=1500
+ENV DGID=1500
 
 # Configuration files
 COPY config/ivfi.conf /etc/nginx/conf.d/ivfi.conf
